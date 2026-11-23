@@ -26,7 +26,7 @@ app = FastAPI(title="RAG Code Reviewer API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace with your exact Vercel URL after deployment
+    allow_origins=["https://codereviewer-pi.vercel.app"],  # Replace with your exact Vercel URL after deployment
     allow_credentials=False,
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
